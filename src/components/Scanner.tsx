@@ -27,9 +27,9 @@ export const Scanner = () => {
           ...scanHistory,
         ]);
 
-          if (!isValidUrl(result.data)) {
-            window.location.href = '/history';
-          }
+        if (!isValidUrl(result.data)) {
+          window.location.href = "/history";
+        }
       }
     };
 
