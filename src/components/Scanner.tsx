@@ -54,7 +54,7 @@ export const Scanner = () => {
       >
         <video
           id="video"
-          className="aspect-square object-cover relative scale-90 z-10"
+          className="aspect-square object-cover relative z-10"
         />
         {scanResult ? <IconTick /> : <IconLoading />}
       </div>
