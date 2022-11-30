@@ -1,5 +1,5 @@
-import { useLocalStorage } from "usehooks-ts";
 import { KEY } from "../../constants/localStorage";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 import type { ScanData } from "../../constants/types";
 

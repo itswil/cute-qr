@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import QrScanner from "qr-scanner";
-import { useLocalStorage } from "usehooks-ts";
 
 import { Cta } from "./Cta";
 import { IconLoading } from "./IconLoading";
 import { IconTick } from "./IconTick";
 import { KEY } from "../../constants/localStorage";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 import { isValidUrl } from "../../utils/url";
 
 import type { ScanData } from "../../constants/types";
