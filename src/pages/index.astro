@@ -1,0 +1,10 @@
+---
+import { Scanner } from "../components/Scanner";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Scan a QR Code or Barcode">
+  <main class="h-full flex items-center">
+    <Scanner client:load />
+  </main>
+</Layout>

@@ -1,0 +1,18 @@
+---
+export interface Props {
+  text: string;
+  url: string;
+}
+
+const { text, url } = Astro.props;
+
+const pathname = new URL(Astro.request.url).pathname;
+const isActive = pathname === url;
+---
+
+<a
+  class="block font-bold border-slate-300 rounded-full w-1/2 text-center"
+  href={url}
+>
+  {text}
+</a>
