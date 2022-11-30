@@ -10,14 +10,15 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="bg-emerald-50 text-sky-900">
+<html lang="en" class="bg-emerald-50 font-medium text-sky-900">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -25,7 +26,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="h-screen m-auto max-w-2xl">
-    <nav class="text-center py-8">
+    <nav class="text-center pt-8">
       <NavLink text="Scan" url="/" />
       <NavLink text="History" url="/history" />
     </nav>
@@ -44,10 +45,10 @@ const { title } = Astro.props;
     );
   }
   html {
-    font-family: system-ui, sans-serif;
+    font-family: "Poppins", system-ui, sans-serif;
   }
   code {
-    font-family: "Poppins", Menlo, Monaco, Lucida Console, Liberation Mono,
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
 </style>
