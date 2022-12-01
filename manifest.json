@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Cute QR Scanner",
+  "short_name": "Cute QR",
+  "categories": ["qr", "code", "scanner", "privacy"],
+  "display": "standalone",
+  "background_color": "rgb(236, 253, 245)",
+  "theme_color": "rgb(209, 250, 229)",
+  "description": "A quick, colorful, cute QR code scanner.",
+  "icons": [
+    {
+      "src": "./public/logo.svg",
+      "sizes": "48x48 72x72 96x96 128x128 256x256 512x512 1024x1024",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
