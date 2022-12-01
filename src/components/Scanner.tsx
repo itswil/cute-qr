@@ -58,6 +58,13 @@ export const Scanner = () => {
         />
         {scanResult ? <IconTick /> : <IconLoading />}
       </div>
+      <p className="py-12 text-center text-slate-300">
+        No tracking
+        <br />
+        No ads
+        <br />
+        No data collection
+      </p>
       {scanResult && <Cta dataString={scanResult.data} />}
     </>
   );
