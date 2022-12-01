@@ -1,7 +1,7 @@
-export const isValidUrl = (url: string) => {
+export const isValidUrl = (urlString: string) => {
   try {
-    new URL(url);
-    return true;
+    const url = new URL(urlString);
+    return url.protocol === "http:" || url.protocol === "https:";
   } catch (e) {
     return false;
   }
