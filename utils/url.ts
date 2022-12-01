@@ -1,7 +1,9 @@
+export const getUrl = (url: string) => new URL(url);
+
 export const isValidUrl = (urlString: string) => {
   try {
-    const url = new URL(urlString);
-    return url.protocol === "http:" || url.protocol === "https:";
+    const { protocol } = getUrl(urlString);
+    return protocol === "http:" || protocol === "https:";
   } catch (e) {
     return false;
   }

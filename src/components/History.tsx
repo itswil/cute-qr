@@ -2,6 +2,7 @@ import { KEY } from "../../constants/localStorage";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 import type { ScanData } from "../../constants/types";
+import { getUrl, isValidUrl } from "../../utils/url";
 
 export const History = () => {
   const [scanHistory, setScanHistory] = useLocalStorage<Array<ScanData>>(
@@ -23,7 +24,7 @@ export const History = () => {
         {scanHistory.map((item) => (
           <li
             key={item.timestamp}
-            className="border-4 border-emerald-100 mb-8 p-4 rounded-3xl"
+            className="border-4 border-emerald-100 mb-8 p-4 relative rounded-3xl"
           >
             <code className="block break-all pb-4 text-sm">{item.data}</code>
             <p className="text-xs text-slate-400">
@@ -32,6 +33,16 @@ export const History = () => {
                 timeStyle: "short",
               })}
             </p>
+            {isValidUrl(item.data) && (
+              <a
+                href={getUrl(item.data).href}
+                className="absolute bg-sky-900 block py-2 px-3 right-4 rounded-full shadow-md text-center text-slate-50 text-xs"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Go to website
+              </a>
+            )}
           </li>
         ))}
       </ul>
