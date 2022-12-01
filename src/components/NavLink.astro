@@ -7,7 +7,7 @@ export interface Props {
 const { text, url } = Astro.props;
 
 const pathname = new URL(Astro.request.url).pathname;
-const isActive = pathname.replace("/", "") === url;
+const isActive = pathname.replaceAll("/", "") === url.replaceAll("/", "");
 
 const activeClasses = "bg-emerald-100 font-bold";
 ---
