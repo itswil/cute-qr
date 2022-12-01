@@ -10,7 +10,11 @@ export const History = () => {
   );
 
   if (!scanHistory || scanHistory.length === 0) {
-    return <p className="text-center">Your scan history is empty</p>;
+    return (
+      <p className="border-4 border-emerald-100 mb-8 p-4 rounded-3xl text-center">
+        Your scan history is empty
+      </p>
+    );
   }
 
   return (
