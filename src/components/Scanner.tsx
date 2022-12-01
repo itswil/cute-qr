@@ -59,7 +59,7 @@ export const Scanner = () => {
         {scanResult ? <IconTick /> : <IconLoading />}
       </div>
       <div className="py-10 text-center">
-        <ul className="bg-gray-50 inline-block opacity-90 p-4 rounded-3xl">
+        <ul className="bg-gray-50 inline-block p-4 rounded-3xl text-gray-600">
           <li>No tracking</li>
           <li>No ads</li>
           <li>No data collection</li>
