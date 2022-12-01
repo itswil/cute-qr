@@ -36,7 +36,7 @@ export const History = () => {
         ))}
       </ul>
       <button
-        className="fixed bg-slate-50 bottom-8 block font-bold py-6 px-12 right-8 rounded-full text-center"
+        className="fixed bg-slate-50 bottom-8 block font-bold py-6 px-12 right-8 rounded-full shadow-md text-center"
         onClick={() => setScanHistory([])}
       >
         Clear history

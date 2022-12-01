@@ -14,7 +14,7 @@ export const Cta = ({ dataString }: CtaProps) => {
   return (
     <a
       href={url.href}
-      className="absolute bg-sky-900 bottom-8 block font-bold py-6 px-12 right-8 rounded-full text-center text-slate-50"
+      className="absolute bg-sky-900 bottom-8 block font-bold py-6 px-12 right-8 rounded-full shadow-md text-center text-slate-50"
       target="_blank"
       rel="noreferrer"
     >
