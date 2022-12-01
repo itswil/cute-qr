@@ -1,6 +1,8 @@
-# 📱 Cute QR
+# 🥒 Cute QR
 
-_The cutest QR code scanner on the web. No ads, no tracking, no data collection._
+_The cutest QR code scanner on the web. No tracking, no ads, no data collection._
+
+[See cuteqr.netlify.app](https://cuteqr.netlify.app)
 
 ## Tools
 
