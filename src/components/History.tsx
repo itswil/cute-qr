@@ -27,7 +27,7 @@ export const History = () => {
             className="border-4 border-emerald-100 mb-8 p-4 relative rounded-3xl"
           >
             <code className="block break-all pb-4 text-sm">{item.data}</code>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-gray-400">
               {new Date(item.timestamp).toLocaleString(["en-GB"], {
                 dateStyle: "medium",
                 timeStyle: "short",
@@ -36,7 +36,7 @@ export const History = () => {
             {isValidUrl(item.data) && (
               <a
                 href={getUrl(item.data).href}
-                className="absolute bg-sky-900 block py-2 px-3 right-4 rounded-full shadow-md text-center text-slate-50 text-xs"
+                className="absolute bg-sky-900 block py-2 px-3 right-4 rounded-full shadow-md text-center text-gray-50 text-xs transition-all hover:bg-sky-700 active:scale-95"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -47,7 +47,7 @@ export const History = () => {
         ))}
       </ul>
       <button
-        className="fixed bg-slate-50 bottom-8 block font-bold py-6 px-12 right-8 rounded-full shadow-md text-center"
+        className="fixed bg-gray-50 bottom-8 block font-bold py-6 px-12 right-8 rounded-full shadow-md text-center transition-all hover:bg-white active:scale-95"
         onClick={() => setScanHistory([])}
       >
         Clear history
