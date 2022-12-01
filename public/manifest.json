@@ -7,7 +7,7 @@
   "display": "standalone",
   "background_color": "rgb(236, 253, 245)",
   "theme_color": "rgb(236, 253, 245)",
-  "description": "A quick, colorful, cute QR code scanner.",
+  "description": "The cutest QR code scanner on the web. No ads, no tracking, no data collection.",
   "orientation": "portrait",
   "icons": [
     {
