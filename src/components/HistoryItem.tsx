@@ -14,7 +14,9 @@ export const HistoryItem = ({ item }: HistoryItemProps) => {
         isJustAdded ? "border-emerald-200" : "border-emerald-100"
       }`}
     >
-      <code className="block break-all pb-4 text-sm">{item.data}</code>
+      <code className="block break-all font-mono pb-4 text-sm">
+        {item.data}
+      </code>
       <p className="text-xs text-gray-400">
         {new Date(item.timestamp).toLocaleString(["en-GB"], {
           dateStyle: "medium",
