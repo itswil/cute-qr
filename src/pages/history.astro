@@ -1,8 +1,8 @@
 ---
-import { History } from "../components/History";
+import { History as HistoryComponent } from "../components/History";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Your scan history | Cute QR">
-  <main class="mx-8 pt-8"><History client:only /></main>
+  <main class="mx-8 pt-8"><HistoryComponent client:only /></main>
 </Layout>
